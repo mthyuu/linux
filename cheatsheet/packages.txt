@@ -3,10 +3,10 @@
 │ Installing, updating, and managing packages on Arch Linux    │
 └──────────────────────────────────────────────────────────────┘
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -S - Install packages                                |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -S <package_name>
 
@@ -21,10 +21,10 @@ Examples:
   pacman -S base-devel git
     → Install multiple packages at once.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -Sy - Update package database                        |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -Sy
 
@@ -36,10 +36,10 @@ Examples:
   pacman -Sy
     → Refresh package lists before installing packages.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -Syu - Full system upgrade                           |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -Syu
 
@@ -51,10 +51,10 @@ Examples:
   pacman -Syu
     → Perform a full system upgrade.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -R - Remove packages                                 |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -R <package_name>
 
@@ -69,10 +69,10 @@ Examples:
   pacman -Rs vim
     → Remove Vim and unused dependencies.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -Q - Query installed packages                        |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -Q [package_name]
 
@@ -86,10 +86,10 @@ Examples:
   pacman -Q vim
     → Check if Vim is installed.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pacman -Ss - Search packages in repositories                |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pacman -Ss <package_name>
 
@@ -100,10 +100,10 @@ Examples:
   pacman -Ss firefox
     → Search for packages related to Firefox.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | yay -S - Install packages from AUR or repositories          |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   yay -S <package_name>
 
@@ -115,10 +115,10 @@ Examples:
   yay -S google-chrome
     → Install Google Chrome from the AUR.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | yay -Sy - Update package database                           |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   yay -Sy
 
@@ -129,10 +129,10 @@ Examples:
   yay -Sy
     → Refresh package lists before installing packages.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | yay -Syu - Full system upgrade including AUR packages       |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   yay -Syu
 
