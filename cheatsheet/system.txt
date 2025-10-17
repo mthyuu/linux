@@ -1,0 +1,118 @@
+┌──────────────────────────────────────────────────────────────┐
+│ SYSTEM & PROCESS MANAGEMENT commands                         │
+│ Commands for monitoring, managing, and inspecting the system │
+└──────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+| ps - Display running processes                              |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  ps [options]
+
+Description:
+  Shows currently running processes.
+  Can display processes for the current user, all users, or hierarchical trees.
+
+Examples:
+  ps
+    → List processes for the current shell session.
+
+  ps aux
+    → Show all running processes with detailed info.
+
+┌─────────────────────────────────────────────────────────────┐
+| top - Real-time process monitoring                          |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  top
+
+Description:
+  Displays real-time system statistics and running processes.
+  Allows sorting by CPU, memory, and process ID.
+
+Examples:
+  top
+    → Open interactive process monitor.
+
+  top -u username
+    → Show processes for a specific user.
+
+┌─────────────────────────────────────────────────────────────┐
+| htop - Interactive process viewer                           |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  htop
+
+Description:
+  Interactive, colorful alternative to `top`.
+  Supports scrolling, searching, and killing processes.
+
+Examples:
+  htop
+    → Open htop interface.
+
+┌─────────────────────────────────────────────────────────────┐
+| kill - Terminate processes                                  |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  kill [options] <PID>
+
+Description:
+  Sends a signal to terminate or control processes by PID.
+  Default signal is TERM (terminate).
+
+Examples:
+  kill 1234
+    → Terminate process with PID 1234
+
+  kill -9 1234
+    → Forcefully terminate process 1234
+
+┌─────────────────────────────────────────────────────────────┐
+| pkill - Terminate processes by name                         |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pkill [options] <process_name>
+
+Description:
+  Sends a signal to processes matching a name or pattern.
+
+Examples:
+  pkill firefox
+    → Terminate all processes named "firefox"
+
+┌─────────────────────────────────────────────────────────────┐
+| df - Disk filesystem usage                                  |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  df [options] [filesystem]
+
+Description:
+  Shows disk usage of filesystems.
+  Supports human-readable output and filtering by filesystem type.
+
+Examples:
+  df -h
+    → Display disk usage in human-readable format.
+
+┌─────────────────────────────────────────────────────────────┐
+| du - Disk usage of files and directories                    |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  du [options] <file/directory>
+
+Description:
+  Estimates disk space used by files or directories.
+  Supports summarizing or displaying detailed output.
+
+Examples:
+  du -sh *
+    → Show size of all items in current directory in human-readable format.
