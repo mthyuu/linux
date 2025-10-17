@@ -1,0 +1,139 @@
+┌──────────────────────────────────────────────────────────────┐
+│ GIT BASICS                                                   │
+│ Common Git commands for version control and repository work  │
+└──────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+| git clone - Clone a repository                              |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git clone <repository_url> [directory]
+
+Description:
+  Copies a remote repository to your local machine.
+  Sets up a local copy with full version history.
+
+Examples:
+  git clone https://github.com/user/repo.git
+    → Clone the repository into a folder named 'repo'.
+
+  git clone https://github.com/user/repo.git myfolder
+    → Clone into a custom folder named 'myfolder'.
+
+┌─────────────────────────────────────────────────────────────┐
+| git status - Show changes                                   |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git status
+
+Description:
+  Displays the current state of the working directory and staging area.
+  Shows modified, staged, and untracked files.
+
+Examples:
+  git status
+    → See which files have changes, are staged, or untracked.
+
+┌─────────────────────────────────────────────────────────────┐
+| git add - Stage changes for commit                          |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git add <file> [file2 ...]
+  git add .
+
+Description:
+  Moves changes from the working directory to the staging area.
+  Prepares files to be included in the next commit.
+
+Examples:
+  git add file.txt
+    → Stage a single file.
+
+  git add .
+    → Stage all modified and new files in the repository.
+
+┌─────────────────────────────────────────────────────────────┐
+| git commit - Record changes                                 |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git commit -m "<commit message>"
+
+Description:
+  Saves staged changes to the local repository.
+  Each commit should have a descriptive message.
+
+Examples:
+  git commit -m "Fix bug in login system"
+    → Commit staged changes with a message.
+
+┌─────────────────────────────────────────────────────────────┐
+| git push - Upload local commits                             |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git push [remote] [branch]
+
+Description:
+  Sends committed changes from your local repository to a remote repository.
+  Updates the remote branch with your local commits.
+
+Examples:
+  git push origin main
+    → Push commits to the main branch of the origin remote.
+
+┌─────────────────────────────────────────────────────────────┐
+| git restore - Restore files                                 |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git restore <file>
+  git restore --staged <file>
+
+Description:
+  Discards changes in the working directory or unstages files from the staging area.
+  Useful to undo unwanted modifications.
+
+Examples:
+  git restore file.txt
+    → Discard changes in file.txt and revert to the last committed state.
+
+  git restore --staged file.txt
+    → Unstage a file from the staging area without modifying the working file.
+
+┌─────────────────────────────────────────────────────────────┐
+| git reset - Reset commits or staging                        |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git reset [--soft|--mixed|--hard] <commit>
+
+Description:
+  Moves the HEAD pointer to a specific commit.
+  --soft keeps changes staged, --mixed keeps changes in the working directory, --hard discards everything.
+
+Examples:
+  git reset --soft HEAD~1
+    → Undo the last commit but keep changes staged.
+
+  git reset --hard HEAD~1
+    → Undo the last commit and discard all changes.
+
+┌─────────────────────────────────────────────────────────────┐
+| git checkout -b - Create and switch to a new branch         |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  git checkout -b <branch_name>
+
+Description:
+  Creates a new branch and immediately switches to it.
+  Useful for starting new features or experiments.
+
+Examples:
+  git checkout -b feature/login
+    → Create and switch to a branch called 'feature/login'.
