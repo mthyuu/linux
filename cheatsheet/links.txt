@@ -7,7 +7,6 @@
 ┌─────────────────────────────────────────────────────────────┐
 | ln - Create links                                           |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   ln [options] <target> <link_name>
 
@@ -19,11 +18,10 @@ Examples:
   ln file.txt file_link.txt
     → Create a hard link named file_link.txt to file.txt
 
-─────────────────────────────────────────────────────────────
+
 ┌─────────────────────────────────────────────────────────────┐
 | ln -s - Create symbolic (soft) links                        |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   ln -s <target> <link_name>
 
@@ -35,11 +33,10 @@ Examples:
   ln -s /usr/local/bin/script.sh ~/script.sh
     → Create a symbolic link in home directory pointing to the script
 
-─────────────────────────────────────────────────────────────
+
 ┌─────────────────────────────────────────────────────────────┐
 | ln -sf - Forcefully create/update symbolic links            |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   ln -sf <target> <link_name>
 
