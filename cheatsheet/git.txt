@@ -7,7 +7,6 @@
 ┌─────────────────────────────────────────────────────────────┐
 | git clone - Clone a repository                              |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git clone <repository_url> [directory]
 
@@ -22,10 +21,10 @@ Examples:
   git clone https://github.com/user/repo.git myfolder
     → Clone into a custom folder named 'myfolder'.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git status - Show changes                                   |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git status
 
@@ -37,10 +36,10 @@ Examples:
   git status
     → See which files have changes, are staged, or untracked.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git add - Stage changes for commit                          |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git add <file> [file2 ...]
   git add .
@@ -56,10 +55,10 @@ Examples:
   git add .
     → Stage all modified and new files in the repository.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git commit - Record changes                                 |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git commit -m "<commit message>"
 
@@ -71,10 +70,10 @@ Examples:
   git commit -m "Fix bug in login system"
     → Commit staged changes with a message.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git push - Upload local commits                             |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git push [remote] [branch]
 
@@ -86,10 +85,10 @@ Examples:
   git push origin main
     → Push commits to the main branch of the origin remote.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git restore - Restore files                                 |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git restore <file>
   git restore --staged <file>
@@ -105,10 +104,10 @@ Examples:
   git restore --staged file.txt
     → Unstage a file from the staging area without modifying the working file.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git reset - Reset commits or staging                        |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git reset [--soft|--mixed|--hard] <commit>
 
@@ -123,10 +122,10 @@ Examples:
   git reset --hard HEAD~1
     → Undo the last commit and discard all changes.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | git checkout -b - Create and switch to a new branch         |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   git checkout -b <branch_name>
 
