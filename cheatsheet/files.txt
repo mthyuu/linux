@@ -21,6 +21,7 @@ Examples:
   ls -lAh
     → List files in long format, including hidden files, with human-readable sizes.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | cd — Change directory                                       |
 └─────────────────────────────────────────────────────────────┘
@@ -38,6 +39,7 @@ Examples:
   cd ..
     → Move up one directory level.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pwd — Print working directory                               |
 └─────────────────────────────────────────────────────────────┘
@@ -50,6 +52,7 @@ Description:
 Examples:
   pwd
     → /home/user
+
 
 ┌─────────────────────────────────────────────────────────────┐
 | cp - Copy fies or directories                               |
@@ -68,6 +71,7 @@ Examples:
   cp -r myfolder /tmp/
     → Recursively copy the folder myfolder to /tmp/
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | mv — Move or rename files                                   |
 └─────────────────────────────────────────────────────────────┘
@@ -83,6 +87,7 @@ Examples:
 
   mv file.txt /tmp/
     → Move file.txt to /tmp/
+
 
 ┌─────────────────────────────────────────────────────────────┐
 | ls — Remove files or directories                            |
@@ -101,6 +106,7 @@ Examples:
   rm -r myfolder
     → Recursively delete the directory myfolder
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | mkdir — Create directories                                  |
 └─────────────────────────────────────────────────────────────┘
@@ -118,6 +124,7 @@ Examples:
   mkdir -p parent/child/grandchild
     → Create nested directories in a single command
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | rmdir - Remove empty directories                            |
 └─────────────────────────────────────────────────────────────┘
@@ -131,6 +138,7 @@ Description:
 Examples:
   rmdir oldfolder
     → Remove the empty directory oldfolder
+
 
 ┌─────────────────────────────────────────────────────────────┐
 | find - Search for files and directories                     |
@@ -147,6 +155,7 @@ Examples:
 
   find . -type d -name "backup"
     → Find directories named "backup" in the current folder
+
 
 ┌─────────────────────────────────────────────────────────────┐
 | grep - Search for text patterns                             |
