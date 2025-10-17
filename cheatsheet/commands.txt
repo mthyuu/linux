@@ -1,0 +1,28 @@
+┌──────────────────────────────────────────────────────────────┐
+│ LINUX CHEATSHEET INDEX                                       │
+│ Quick reference for command categories                       │
+└──────────────────────────────────────────────────────────────┘
+
+1. FILE MANAGEMENT
+   - ls, cd, pwd, cp, mv, rm, mkdir, rmdir, find, grep
+
+2. PERMISSIONS
+   - chmod (see perms.txt), chown, chgrp
+
+3. LINKS
+   - ln, ln -s, ln -sf
+
+4. SYSTEM & PROCESS MANAGEMENT
+   - ps, top, htop, kill, pkill, df, du
+
+5. PACKAGES (ARCH)
+   - pacman -S, pacman -R, yay -S, pacman -Q, pacman -Ss
+
+6. GIT BASICS
+   - git clone, git status, git add, git commit, git push
+   - git restore, git reset, git checkout -b
+
+───────────────────────────────────────────────────────────────
+Use `cat cheatsheet/<section>.txt` to view details.
+Example: `cat cheatsheet/files.txt`
+───────────────────────────────────────────────────────────────
