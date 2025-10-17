@@ -1,0 +1,144 @@
+┌──────────────────────────────────────────────────────────────┐
+│ PACKAGES (ARCH)                                              │
+│ Installing, updating, and managing packages on Arch Linux    │
+└──────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -S - Install packages                                |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -S <package_name>
+
+Description:
+  Installs one or more packages from the repositories.
+  Automatically resolves dependencies.
+
+Examples:
+  pacman -S vim
+    → Install the Vim editor.
+
+  pacman -S base-devel git
+    → Install multiple packages at once.
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -Sy - Update package database                        |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -Sy
+
+Description:
+  Synchronizes package databases with the repositories.
+  Does not upgrade installed packages.
+
+Examples:
+  pacman -Sy
+    → Refresh package lists before installing packages.
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -Syu - Full system upgrade                           |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -Syu
+
+Description:
+  Updates the package database and upgrades all installed packages.
+  Recommended to run regularly to keep the system up to date.
+
+Examples:
+  pacman -Syu
+    → Perform a full system upgrade.
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -R - Remove packages                                 |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -R <package_name>
+
+Description:
+  Removes a package while leaving dependencies installed.
+  Use -Rs to remove dependencies as well.
+
+Examples:
+  pacman -R vim
+    → Remove Vim editor.
+
+  pacman -Rs vim
+    → Remove Vim and unused dependencies.
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -Q - Query installed packages                        |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -Q [package_name]
+
+Description:
+  Lists installed packages or checks if a specific package is installed.
+
+Examples:
+  pacman -Q
+    → List all installed packages.
+
+  pacman -Q vim
+    → Check if Vim is installed.
+
+┌─────────────────────────────────────────────────────────────┐
+| pacman -Ss - Search packages in repositories                |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  pacman -Ss <package_name>
+
+Description:
+  Searches the repositories for packages matching a keyword.
+
+Examples:
+  pacman -Ss firefox
+    → Search for packages related to Firefox.
+
+┌─────────────────────────────────────────────────────────────┐
+| yay -S - Install packages from AUR or repositories          |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  yay -S <package_name>
+
+Description:
+  Installs packages from both official repositories and the AUR.
+  Automatically handles dependencies and prompts for user input.
+
+Examples:
+  yay -S google-chrome
+    → Install Google Chrome from the AUR.
+
+┌─────────────────────────────────────────────────────────────┐
+| yay -Sy - Update package database                           |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  yay -Sy
+
+Description:
+  Synchronizes both repository and AUR package databases.
+
+Examples:
+  yay -Sy
+    → Refresh package lists before installing packages.
+
+┌─────────────────────────────────────────────────────────────┐
+| yay -Syu - Full system upgrade including AUR packages       |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  yay -Syu
+
+Description:
+  Updates package databases and upgrades all installed packages, including AUR packages.
+
+Examples:
+  yay -Syu
+    → Perform a complete system and AUR upgrade.
