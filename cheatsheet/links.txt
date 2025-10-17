@@ -1,0 +1,51 @@
+┌──────────────────────────────────────────────────────────────┐
+│ LINK COMMANDS                                                │
+│ Working with symbolic and hard links                         │
+└──────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+| ln - Create links                                           |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  ln [options] <target> <link_name>
+
+Description:
+  Creates hard links to files. Hard links point directly to the file's inode.
+  Both the original file and the link share the same data.
+
+Examples:
+  ln file.txt file_link.txt
+    → Create a hard link named file_link.txt to file.txt
+
+─────────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────────┐
+| ln -s - Create symbolic (soft) links                        |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  ln -s <target> <link_name>
+
+Description:
+  Creates a symbolic link (symlink) to a file or directory.
+  Symlinks are like shortcuts and can point to directories or files across filesystems.
+
+Examples:
+  ln -s /usr/local/bin/script.sh ~/script.sh
+    → Create a symbolic link in home directory pointing to the script
+
+─────────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────────┐
+| ln -sf - Forcefully create/update symbolic links            |
+└─────────────────────────────────────────────────────────────┘
+
+Usage:
+  ln -sf <target> <link_name>
+
+Description:
+  Creates or updates a symbolic link, overwriting the existing link if it exists.
+
+Examples:
+  ln -sf /usr/local/bin/newscript.sh ~/script.sh
+    → Update the symlink ~/script.sh to point to the new script
