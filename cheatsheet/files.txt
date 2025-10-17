@@ -1,0 +1,167 @@
+┌──────────────────────────────────────────────────────────────┐
+│ FILE MANAGEMENT COMMANDS                                     │
+│ Working with files, directories, and search operations       │
+└──────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+| ls — List directory contents                                |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  ls [options] [directory]
+
+Description:
+  Lists files and directories in the specified location.
+  Supports sorting, filtering, and detailed listings.
+
+Examples:
+  ls
+    → Show files in the current directory.
+
+  ls -lAh
+    → List files in long format, including hidden files, with human-readable sizes.
+
+┌─────────────────────────────────────────────────────────────┐
+| cd — Change directory                                       |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  cd <directory>
+
+Description:
+  Changes the current working directory.
+  `cd` without arguments returns to the home directory.
+
+Examples:
+  cd /var/log
+    → Move to /var/log directory.
+
+  cd ..
+    → Move up one directory level.
+
+┌─────────────────────────────────────────────────────────────┐
+| pwd — Print working directory                               |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  pwd
+
+Description:
+  Displays the full path of the current directory.
+
+Examples:
+  pwd
+    → /home/user
+
+┌─────────────────────────────────────────────────────────────┐
+| cp - Copy fies or directories                               |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  cp [options] <source> <destination>
+
+Description:
+  Copies files or directories to a new location.
+  Supports recursive copying for directories.
+
+Examples:
+  cp file.txt /tmp/
+    → Copy file.txt to /tmp/
+
+  cp -r myfolder /tmp/
+    → Recursively copy the folder myfolder to /tmp/
+
+┌─────────────────────────────────────────────────────────────┐
+| mv — Move or rename files                                   |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  mv [options] <source> <destination>
+
+Description:
+  Moves files or directories to a new location or renames them.
+
+Examples:
+  mv oldname.txt newname.txt
+    → Rename oldname.txt to newname.txt
+
+  mv file.txt /tmp/
+    → Move file.txt to /tmp/
+
+┌─────────────────────────────────────────────────────────────┐
+| ls — Remove files or directories                            |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  rm [options] <file/directory>
+
+Description:
+  Deletes files or directories.
+  Use caution — removed files are usually not recoverable.
+
+Examples:
+  rm file.txt
+    → Delete file.txt
+
+  rm -r myfolder
+    → Recursively delete the directory myfolder
+
+┌─────────────────────────────────────────────────────────────┐
+| mkdir — Create directories                                  |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  mkdir [options] <directory>
+
+Description:
+  Creates new directories.
+  Supports creating nested directories with the `-p` option.
+
+Examples:
+  mkdir newfolder
+    → Create a directory named newfolder
+
+  mkdir -p parent/child/grandchild
+    → Create nested directories in a single command
+
+┌─────────────────────────────────────────────────────────────┐
+| rmdir - Remove empty directories                            |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  rmdir <directory>
+
+Description:
+  Deletes empty directories only.
+  Fails if the directory contains files.
+
+Examples:
+  rmdir oldfolder
+    → Remove the empty directory oldfolder
+
+┌─────────────────────────────────────────────────────────────┐
+| find - Search for files and directories                     |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  find <path> [options] [expression]
+
+Description:
+  Searches recursively for files and directories matching patterns or conditions.
+
+Examples:
+  find /home/user -name "*.txt"
+    → Find all .txt files under /home/user
+
+  find . -type d -name "backup"
+    → Find directories named "backup" in the current folder
+
+┌─────────────────────────────────────────────────────────────┐
+| grep - Search for text patterns                             |
+└─────────────────────────────────────────────────────────────┘
+Usage:
+  grep [options] <pattern> <file>
+  <command> | grep [options] <pattern>
+
+Description:
+  Searches for text patterns within files or command output.
+  Works as a text filter — it can read from files or from other commands via a pipe.
+
+Examples:
+  grep -i "error" /var/log/syslog
+    → Search (case-insensitive) for "error" in a log file.
+
+  dmesg | grep -i "usb"
+    → Search live console output for "usb" messages
