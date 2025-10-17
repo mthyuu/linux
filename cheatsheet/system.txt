@@ -7,7 +7,6 @@
 ┌─────────────────────────────────────────────────────────────┐
 | ps - Display running processes                              |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   ps [options]
 
@@ -22,10 +21,10 @@ Examples:
   ps aux
     → Show all running processes with detailed info.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | top - Real-time process monitoring                          |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   top
 
@@ -40,10 +39,10 @@ Examples:
   top -u username
     → Show processes for a specific user.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | htop - Interactive process viewer                           |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   htop
 
@@ -55,10 +54,10 @@ Examples:
   htop
     → Open htop interface.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | kill - Terminate processes                                  |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   kill [options] <PID>
 
@@ -73,10 +72,10 @@ Examples:
   kill -9 1234
     → Forcefully terminate process 1234
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | pkill - Terminate processes by name                         |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   pkill [options] <process_name>
 
@@ -87,10 +86,10 @@ Examples:
   pkill firefox
     → Terminate all processes named "firefox"
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | df - Disk filesystem usage                                  |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   df [options] [filesystem]
 
@@ -102,10 +101,10 @@ Examples:
   df -h
     → Display disk usage in human-readable format.
 
+
 ┌─────────────────────────────────────────────────────────────┐
 | du - Disk usage of files and directories                    |
 └─────────────────────────────────────────────────────────────┘
-
 Usage:
   du [options] <file/directory>
 
