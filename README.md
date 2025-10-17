@@ -1,7 +1,6 @@
 # Linux Help/Guide
-
-***
-
+&nbsp;
+&nbsp;
 ## Cheatsheet (for commands)
 
 - [Overview](https://github.com/mthyuu/linux/blob/8915107cc8b0ecaa95cb9b25d3c6922ecea0c3d6/cheatsheet/commands-overview.txt)
