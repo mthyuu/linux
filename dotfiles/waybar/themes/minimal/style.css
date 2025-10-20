@@ -1,0 +1,75 @@
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", "Inter";
+    font-size: 14px;
+    color: white;
+    min-height: 0;
+}
+
+
+window#waybar {
+    background-color: transparent;
+    transition: background 0.2s ease;
+}
+
+#workspaces{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#workspaces button {
+    border-radius: 10px;
+    margin: 0 2px;
+    padding: 0px 8px;
+    background: transparent;
+    transition: background 0.2s;
+}
+
+#workspaces button.active, #workspaces button.focused{
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Optional hover accent */
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+#tray,
+#mpd,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery, 
+#clock, 
+#idle_inhibitor,
+#network {
+	background: rgba(30, 30, 46, 0.6);  /* translucent background */
+    	border-radius: 20px;
+    	padding: 1px 8px;
+    	margin: 0 1px;
+}
+
+.modules-center {
+    background: rgba(24, 24, 37, 0.6);
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin: 0 4px;
+}
+
+.modules-left,
+.modules-right {
+    background: rgba(24, 24, 37, 0.6);
+    border-radius: 20px;
+    padding: 3px 5px;
+    margin: 0 4px;
+}
+
