@@ -14,7 +14,6 @@
 &nbsp;
 ## Dotfiles
 
-- [Hyprland]()
-- [Waybar]()
-- [Wofi]()
-- [Fonts]()
+- [Hyprland](dotfiles/hyprland)
+- [Waybar](dotfiles/waybar)
+- [Fuzzel](dotfiles/fuzzel)
