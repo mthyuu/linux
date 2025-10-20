@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --noconfirm --needed gimp tldr go fzf 
+sudo pacman -S --noconfirm --needed gimp tldr go fzf unzip
 sudo pacman -Syu
 sudo pacman -S hyprland hyprlock hyprpaper --noconfirm --needed
 sudo pacman -S tff-font-awesome ttf-nerd-font-symbols ttf-jetbrains-mono-nerd inter-font adobe-source-code-pro-fonts
