@@ -1,0 +1,12 @@
+plans to do stuff:
+
+- customize sddm
+  
+- start working on ags (https://github.com/Aylur/ags)
+  - widgets wanted:
+  - control panel (network, sound, bluetooth, etc.)
+  - maybe a music player
+  - notifications (maybe? if swaync sucks)
+ 
+  - add steelseries software thing
+  - figure out how stow works
