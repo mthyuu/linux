@@ -1,6 +1,7 @@
 plans to do stuff:
 
 - customize sddm
+  - install this guy's theme and customize it
   
 - start working on ags (https://github.com/Aylur/ags)
   - widgets wanted:
@@ -13,4 +14,5 @@ plans to do stuff:
   - add steelseries software thing
   - figure out how stow works
 
-- finally download steam lol
+- finally download steam lol (DONE, but steam overlay is buggy)
+  - still need to mount/unmount windows drives for gaming
