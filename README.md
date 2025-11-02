@@ -14,6 +14,6 @@
 &nbsp;
 ## Dotfiles
 
-- [Hyprland](dotfiles/hyprland)
-- [Waybar](dotfiles/waybar)
-- [Fuzzel](dotfiles/fuzzel)
+- [Hyprland](dotfiles/.config/hypr)
+- [Waybar](dotfiles/.config/waybar)
+- [Fuzzel](dotfiles/.config/fuzzel)
