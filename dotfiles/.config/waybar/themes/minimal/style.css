@@ -73,3 +73,17 @@ window#waybar {
     margin: 0 4px;
 }
 
+/* Style the system tray popout context menus */
+menu,
+menuitem {
+    background: rgba(30, 30, 46, 0.6); /* Dark translucent background */
+    color: #cdd6f4;                    /* Light text color */
+    border-radius: 8px;
+    padding: 4px;
+}
+
+menu menuitem:hover {
+    background: rgba(255, 255, 255, 0.15); /* Hover accent highlight */
+    color: #ffffff;
+}
+
