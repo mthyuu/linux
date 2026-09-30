@@ -5,23 +5,23 @@
 "margin-bottom":0,
 "margin-top":0,
 
-//"font": "JetBrainsMono Nerd Font:size=10",
-
 "modules-left": ["hyprland/workspaces"],
 "modules-center": ["clock"],
-"modules-right":  ["tray","idle_inhibitor","pulseaudio","network","cpu","memory","mpd"],
+"modules-right":  ["tray","idle_inhibitor","pulseaudio","network","cpu","memory","mpd", "battery"],
 
 "battery": {
   "states": {
   "warning": 30,
   "critical": 15
   },
+
   "format": "{icon} {capacity}%",
   "format-charging": " {capacity}%",
   "format-plugged": " {capacity}%",
   "format-alt": "{icon} {time}",
-  "format-icons": ["", "", "", "", "", "", ""]
+  "format-icons": ["󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"]
 },
+
 "hyprland/workspaces": {
      "format": "{icon}",
      "all-outputs": true,
@@ -33,33 +33,34 @@
     	  "default": ""
   	 },
      
-     
      "persistent-workspaces": {
      	"*": [1,2,3,4,5]
      }
 },
+
 "hyprland/window": {
     "max-length": 200,
     "separate-outputs": true
 },
-"sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-},
+
 "tray": {
     "icon-size": 16,
     "spacing": 6
 },
+
 "clock": {
     "locale": "C", 
     "format": " {:%I:%M %p}",
     "format-alt": " {:%a,%b %d}", // Icon: calendar-alt
     "tooltip-format": " {:%A, %B %d, %Y}"
 },
+
 "cpu": {
     "format": " {usage}%",
     "tooltip": false,
     "on-click": "kitty -e 'htop'"
 },
+
 "memory": {
     "interval": 30,
     "format": " {used:0.2f}GB",
@@ -68,6 +69,7 @@
     "warning": 70,
     "critical": 90
 },
+
 "network": {
   "interval": 2,
   "format-wifi": "󰖩",
@@ -80,6 +82,7 @@
   "min-length": 0,
   "format-alt": "{essid}",
 },
+
 "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -87,13 +90,7 @@
         "deactivated": ""
     }
 },
-"backlight": {
-    // "device": "acpi_video1",
-    "format": "{icon} {percent}%",
-    "format-icons": ["", ""],
-    "on-scroll-down": "brightnessctl -c backlight set 1%-",
-    "on-scroll-up": "brightnessctl -c backlight set +1%"
-},
+
 "pulseaudio": {
   // "scroll-step": 1, // %, can be a float
   "format": "{icon} {volume}% {format_source}",
@@ -113,6 +110,7 @@
   },
   "on-click": "pavucontrol"
 },
+
 "mpd": {
   "format": "{stateIcon} {artist} - {title}",
   "format-disconnected": "🎶",
@@ -139,20 +137,5 @@
   "tooltip-format-disconnected": "MPD (disconnected)",
   "max-length": 35
 },
-"custom/recorder": {
-    "format": " Rec",
-    "format-disabled": " Off-air", //An empty format will hide the module.
-    "return-type": "json",
-    "interval": 1,
-    "exec": "echo '{\"class\": \"recording\"}'",
-    "exec-if": "pgrep wf-recorder",
-},
-"custom/audiorec": {
-    "format": "♬ Rec",
-    "format-disabled": "♬ Off-air", //An empty format will hide the module.
-    "return-type": "json",
-    "interval": 1,
-    "exec": "echo '{\"class\": \"audio recording\"}'",
-    "exec-if": "pgrep ffmpeg",
-},
+
 }
