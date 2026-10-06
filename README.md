@@ -14,6 +14,7 @@
 &nbsp;
 ## Dotfiles
 
+- [Wallpapers](dotfiles/wallpapers)
 - [Hyprland](dotfiles/.config/hypr)
 - [Waybar](dotfiles/.config/waybar)
 - [Fuzzel](dotfiles/.config/fuzzel)
